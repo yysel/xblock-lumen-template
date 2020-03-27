@@ -6,7 +6,9 @@
 git clone https://github.com/yysel/xblock-lumen-template.git
 
 //进入项目目录
-cd xblock-lumen-template 
+cd xblock-lumen-template
+ 
+//修改你的.env中的数据库配置
 
 //安装依赖
 composer install
