@@ -105,6 +105,7 @@ $app->configure('app');
 */
 $app->register(XBlock\Kernel\KernelProvider::class);
 $app->register(XBlock\Auth\AuthProvider::class);
+if (!$app->environment('production')) $app->register(\XBlock\Helper\HelperProvider::class);
 $app->router->group([
     'namespace' => 'App\Http\Controllers',
 ], function ($router) {
